@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  body{
+      overflow-x: hidden;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f5f5;
+      font-size: 18px;
+  }
+nav{
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+/* animated text styling */
+.center-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.ml2 {
+    font-weight: 600;
+    font-size: 3.5em;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    background: #7e3748a6;
+}
+@media all and (max-width: 600px){
+    .ml2{
+        font-size: 1.5em;
+    }
+}
+.ml2 .letter {
+    display: inline-flex;
+    
+  }
+  /* end of animated text */
+
+.logo-text{
+    color: #000;
+    font-size: 20px; 
+    letter-spacing: 3px; 
+    
+}
+.logo a:hover{text-decoration: none;}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.menu li{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+.menu li a{
+    display: block;
+}
+.button.secondary{
+    border-bottom: 1px solid #efefef;
+}
+
+/* mobile menu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+.toggle{
+    order: 1;
+}
+.item.button{
+    order: 2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+    z-index: 100;
+}
+.item.active{
+    display: block;
+    animation: fadeInUp;      /* anamation for the text when the hamburger is clicked  */
+    animation-duration: 1s;
+}
+.toggle{
+   cursor: pointer;
+}
+.bars{
+    background: #3f3e3e;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after{
+    background: #3f3e3e;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+
+/* tablet menu */
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        display: block;
+        order: 1;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button.secondary{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        background-color: #000;
+        padding: 8px 12px;
+        border-radius: 24px;
+        color: #fff;
+    }
+    .button.secondary a{
+        background: #efefef;
+        color: #000;
+    }
+    .button a:hover{
+        transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background: #ad081b;
+    }
+    .button.secondary a:hover{
+        background: #e2e2e2;
+    }
+}
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .item:hover{
+        border-bottom: 2px solid;
+        border-color: #e7bfc0;
+        
+    }
+    .item a:hover{
+        color:#3f3e3e ;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+}
+@media all and (max-width: 768px){
+    .item{
+        border-bottom: 1px solid #99999942;
+    }
+}

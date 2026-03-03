@@ -1,0 +1,137 @@
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    z-index: 0;
+}
+.left-image{
+    width: 50%;
+    height: 600px;
+    background: url('../images/pp9.jpeg');
+    border-radius: 8px;
+}
+.right-text{
+    width: 50%;
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    background: pink;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: -100px;
+}
+.right-text p{
+    font-size: 17px;
+}
+.about-content h4{
+   padding: 15px;
+}
+.about-content h1{
+    padding-bottom: 15px;
+ }
+
+@media all and (max-width: 768px){
+     .about-container{
+         flex-direction: column;
+         width: 100%;
+         margin: 0 20px;
+         overflow: hidden;
+     }
+     .left-image{
+         width: 100%;
+     }
+     .right-text{
+         width: 80%;
+         margin: 0;
+         margin-top: -150px;
+     }
+}
+
+/* packages styling */
+.packages-container{
+    width: 100%;
+    /* padding: 30px; */
+}
+.grid{
+    margin: 10px auto 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    text-align: center;
+}
+.pkg_img img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+article .text{
+    font-size: 17px;
+    padding: 10px;
+    height: 350px;
+}
+article .text h3{
+    padding: 10px;
+}
+article p{
+    padding: 10px ;
+}
+
+/* booking styling */
+.booking-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 250px auto;
+   width: 90%;
+   z-index: 0;
+}
+.left-booking-text{
+    width: 50%;
+    background: white;
+    min-height: 600px;
+    margin-right: 30px;
+}
+.left-booking-text h1{
+    color: grey;
+    padding: 20px;
+    text-align: center;
+}
+.left-booking-text p{
+    padding: 20px;
+    font-size: 17px;
+}
+.left-booking-text ul{
+    padding-left: 20px ;
+}
+.right-booking-image{
+    width: 50%;
+    min-height: 600px;
+    background-image: url('../images/pp11.jpeg');
+}
+@media all and (max-width: 768px){
+    .booking-container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .left-booking-text{
+        width: 100%;
+        margin: 0;
+    }
+    .right-booking-image{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

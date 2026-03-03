@@ -1,0 +1,18 @@
+.background{
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/PP1.jpeg');
+  animation: animate 15s ease-in infinite;
+}
+
+/* @keyframes animate{
+  0%, 100%{background-image: url('./image1.jpg');}
+  25%{background-image: url('./pinterest-logo.png');}
+  50%{background-image: url('./hearts.jpg');}
+  75%{background-image: url('./pinterest-logo.png');}
+} */
