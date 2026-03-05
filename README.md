@@ -3,6 +3,7 @@ The Party Yard is a frontend project aimed at creating a website that provides i
 Features
 
 Check out the live version of The_Party_Yard  website [Here](https://the-party-yard.netlify.app/)
+
 The Party Yard offers the following key features:
 
     Wedding Party Hosting: The website provides detailed information about hosting wedding parties at Party yard, including venue options, available amenities, and pricing.
